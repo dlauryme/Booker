@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/reset.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main-info.css">
+    <link rel="stylesheet" href="./style/book-section.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <title>Booker</title>
+</head>
+<script src="./script.js"></script>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="./resources/logo.svg" alt="logo">
+        </div>
+        <div id="main-buttons">
+            <button class="main-button"><span>Акції</span></button>
+            <button class="main-button"><span>Доставка</span></button>
+            <button class="main-button"><span>Оплата</span></button>
+            <button class="main-button"><span>Контакти</span></button>
+            <button class="main-button"><span>Блог</span></button>
+        </div>
+        <div id="favourite-button">
+            <button>
+                <img src="./resources/heart.svg" alt="heart">
+            </button>
+        </div>
+        <div id="shopping-cart-button">
+            <button>
+                <img src="./resources/shoppingCart.svg" alt="shoppingCart">
+            </button>
+        </div>
+        <div id="social-buttons">
+            <button class="social-button" onclick="window.open('https://www.instagram.com/dariagakh/')">
+                <img src="./resources/instagram.svg" alt="instagram">
+            </button>
+            <button class="social-button" onclick="window.open('https://www.facebook.com/daria.gakh/')">
+                <img src="./resources/facebook.svg" alt="facebook">
+            </button>
+            <button class="social-button" onclick="window.open('https://twitter.com/')">
+                <img src="./resources/twitter.svg" alt="twitter">
+            </button>
+        </div>
+    </div>
+
+    <div id="main-info">
+        <div id="main-search-catalog">
+            <div id="main-catalog">
+                <button>
+                    <span>Каталог товарів</span>
+                    <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="5" y2="5" stroke="currentColor" />
+                        <line x1="5" y1="5" x2="10" y2="0" stroke="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <div id="main-search">
+                <div id="main-search-field">
+                    <input type="text" placeholder="ПОШУК ТОВАРІВ" />
+                </div>
+                <div id="main-search-button">
+                    <button>
+                        <span>Знайти</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="main-news">
+            <div id="main-news-name">
+                <div class="container">
+                    <span>Бестселер</span>
+                </div>
+            </div>
+            <div id="main-news-description">
+                <img src="./resources/news1.png" alt="news1">
+            </div>
+        </div>
+        <div id="main-news-selector">
+            <div class="news-selector-item selector-active"><button></button></div>
+            <div class="news-selector-item"><button></button></div>
+            <div class="news-selector-item"><button></button></div>
+            <div class="news-selector-item"><button></button></div>
+            <div class="news-selector-arrow-left"><button>
+                <svg viewBox="0 0 5 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="0" x2="0" y2="5" stroke="currentColor" />
+                    <line x1="0" y1="5" x2="5" y2="10" stroke="currentColor" />
+                </svg>
+            </button></div>
+            <div class="news-selector-arrow-right"><button>
+                <svg viewBox="0 0 5 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="5" y2="5" stroke="currentColor" />
+                    <line x1="5" y1="5" x2="0" y2="10" stroke="currentColor" />
+                </svg>
+            </button></div>
+        </div>
+        <div id="catalog" class="catalog-disabled">
+            <div class="catalog-item">
+                <button>
+                    <span>Дитяча література</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Художня література</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Нехудожня література</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Література іноземними мовами</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Подарункові видання</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Довідникова література</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Супутні товари</span>
+                </button>
+            </div>
+            <div class="catalog-item">
+                <button>
+                    <span>Блокноти</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-section" id="hits">
+        <div class="book-section-title">
+            <div class="book-section-line"></div>
+            <div class="book-section-name">
+                <span>Хіти продажу</span>
+            </div>
+        </div>
+        <div class="books">
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/c463077c_fafc_11e9_8123_000c29ae1566_9f9a6c70_fafd_11e9_8123_000c29ae1566-removebg-preview.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Кафе на краю світу</span>
+                </div>
+                <div class="book-author">
+                    <span>Джон П. Стрелекі</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>12 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>199 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/44778_67819.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Дюна</span>
+                </div>
+                <div class="book-author">
+                    <span>Френк Герберт</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>40 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>289 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/img_84166.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Перспективи українськ...</span>
+                </div>
+                <div class="book-author">
+                    <span>Степан Бандера</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>8 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>330 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/fb623025y_____3_-removebg-preview.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Заборонений</span>
+                </div>
+                <div class="book-author">
+                    <span>Сергій Дзюба</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>14 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>190 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/d0a381_e32c55bb13ef431d8915a3ca189a94b9_mv2.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Матера вам не наймичка</span>
+                </div>
+                <div class="book-author">
+                    <span>Катя Бльостка</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>32 відгуки</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>185 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/file_1203_2.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Людина в пошуках спр...</span>
+                </div>
+                <div class="book-author">
+                    <span>Вiктор Франкл</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>53 відгуки</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>110 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="book-section" id="recommendations">
+        <div class="book-section-title">
+            <div class="book-section-line"></div>
+            <div class="book-section-name">
+                <span>Ми рекомендуємо</span>
+            </div>
+        </div>
+        <div class="books">
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/cover_176_699_1.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Купи собі той довбани...</span>
+                </div>
+                <div class="book-author">
+                    <span>Тара Шустер</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>78 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>270 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/img651_cr_3.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Емоційний інтелект</span>
+                </div>
+                <div class="book-author">
+                    <span>Денiел Ґоулман</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>34 відгуки</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>196 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/bdd6e055650f9b0aba99da57d1cc9c0c.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Чудове чудовисько</span>
+                </div>
+                <div class="book-author">
+                    <span>Сашко Дерманський</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>9 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>130 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/1984-orvel1-removebg-preview.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>1984</span>
+                </div>
+                <div class="book-author">
+                    <span>Джордж Орвелл</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>75 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>130 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/kniga-istorija-ukrainy-vid-dida-svyryda-knyga-persha-600x800.jpg" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Історія України від Дід...</span>
+                </div>
+                <div class="book-author">
+                    <span>Дід Свирид</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>26 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>326 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+            <div class="book">
+                <div class="book-cover">
+                    <img src="./resources/bookCovers/istu_molutus_kohatu_0-removebg-preview.png" alt="book" />
+                </div>
+                <div class="book-title">
+                    <span>Їсти, молитися, кохати</span>
+                </div>
+                <div class="book-author">
+                    <span>Елізабет Ґілберт</span>
+                </div>
+                <div class="book-review">
+                    <div class="book-stars">
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="book-star book-star-active">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.82676 10.4204L2.93611 6.9814L0.412527 5.09719C-0.358397 4.52159 0.0486999 3.2959 1.0108 3.2959H4.12498L4.95427 0.725099C5.24489 -0.175841 6.50845 -0.20611 6.84189 0.679878L7.82642 3.2959H11.0772C12.0302 3.2959 12.4431 4.50252 11.6898 5.08632L9.22044 7.00003L10.4633 10.3025C10.8152 11.2375 9.72962 12.0537 8.92912 11.456L6.14907 9.38032L3.39104 11.5178C2.61366 12.1202 1.52482 11.3564 1.82676 10.4204Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-feedback">
+                        <span>55 відгуків</span>
+                    </div>
+                </div>
+                <button class="book-buy">
+                    <div class="book-price">
+                        <span>200 грн</span>
+                    </div>
+                    <div class="book-cart">
+                        <img src="./resources/shoppingCart.svg" alt="shoppingCart" />
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="differential-line"></div>
+
+    <div id="about">
+        <div class="about-text">
+            <h1>Переваги покупки в BOOKER</h1>
+            <p>Ми знаємо всі наші книги і знайомі вони нам не тільки по красивих обкладинках. Якщо вам важко у виборі новинки та ви не можете визначитися у величезному асортименті, наші консультанти прийдуть на допомогу. Всі продавці BOOKER розділяють любов до друкованого слова і раді порадити саме ту книгу, яку ви шукаєте. Наш кол-центр працює на сайті 7 днів на тиждень з 8:00 до 21:00. Ми готові проконсультувати вас з усіх питань, включаючи і вартість видань. </p>
+            <p>Нам довіряють, і повага наших клієнтів підтверджується преміями. Наприклад, наша компанія стала переможцем в номінації «Кращий книжковий інтернет-магазин» в конкурсі найбільш вдалих проєктів в інтернеті E-awards 2018. А завдяки розвиненій системі логістики, ми оперативно і дешево поставляємо продукцію як по Києву, так і в будь-який, навіть найвіддаленіший регіон України. Для жителів столиці доступне самовивезення.</p>
+            <p>Приходьте до нас! У нас є що дарувати, чим творити, що читати і де вибирати за найкращою ціною!</p>
+        </div>
+        <div class="about-ad">
+            <div class="about-ad-info">
+                <h1>Міняємо email на книжкотренди!</h1>
+                <p>Отримуйте інфо про новинки, книжкові добірки, секретні промокоди 😉</p>
+            </div>
+            <div id="main-search">
+                <div id="main-search-field">
+                    <input type="text" placeholder="Ваш e-mail" />
+                </div>
+                <div id="main-search-button">
+                    <button>
+                        <span>Отримувати цікавинки</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="differential-line"></div>
+
+    <div id="footer">
+        <div class="return-top">
+            <div id="logo">
+                <img src="./resources/logo.svg" alt="logo">
+            </div>
+            <div class="return-top-button">
+                <button>
+                    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="9" x2="6" y2="4" stroke="currentColor" />
+                        <line x1="6" y1="4" x2="11" y2="9" stroke="currentColor" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="info">
+            <div class="about-us">
+                <h1>Про нас</h1>
+                <p>Видавництво BOOKER – одне з найбільших видавництв, що займає лідуючі позиції на українському книжковому ринку.</p>
+                <p>Ми видаємо книги всіх жанрів для найширшої аудиторії, починвючи з 1990 року. Видавництво випускає понад 40 млн. екземплярів книг на рік та поєднує найсильнішу в країні редакційну команду.</p>
+            </div>
+            <div class="we-in-socials">
+                <div class="we-in-socials-text">
+                    <h1>Ми у соц. мережах</h1>
+                    <p>Підпишіться на нас у соціальних мережах, щоб не пропустити новини. Дізнавайтеся перші про книжкові події, випуск нових книг, зустрічі з авторами, розпродажі та багато іншого!</p>
+                </div>
+                <div class="we-in-socials-buttons">
+                    <div class="we-in-socials-button">
+                        <button onclick="window.open('https://www.instagram.com/dariagakh/')">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00356 3.97019C5.73214 3.97019 3.89999 5.78707 3.89999 8.03957C3.89999 10.2921 5.73214 12.1089 8.00356 12.1089C10.275 12.1089 12.1071 10.2921 12.1071 8.03957C12.1071 5.78707 10.275 3.97019 8.00356 3.97019ZM8.00356 10.6852C6.53571 10.6852 5.33571 9.49873 5.33571 8.03957C5.33571 6.5804 6.53214 5.39394 8.00356 5.39394C9.47499 5.39394 10.6714 6.5804 10.6714 8.03957C10.6714 9.49873 9.47142 10.6852 8.00356 10.6852ZM13.2321 3.80373C13.2321 4.33144 12.8036 4.7529 12.275 4.7529C11.7428 4.7529 11.3178 4.3279 11.3178 3.80373C11.3178 3.27957 11.7464 2.85457 12.275 2.85457C12.8036 2.85457 13.2321 3.27957 13.2321 3.80373ZM15.95 4.76707C15.8893 3.49561 15.5964 2.36936 14.6571 1.44144C13.7214 0.513525 12.5857 0.223108 11.3036 0.159358C9.98213 0.0849829 6.02142 0.0849829 4.69999 0.159358C3.42142 0.219566 2.28571 0.509983 1.34642 1.4379C0.407136 2.36582 0.11785 3.49207 0.0535644 4.76353C-0.0214355 6.07394 -0.0214355 10.0016 0.0535644 11.3121C0.114279 12.5835 0.407136 13.7098 1.34642 14.6377C2.28571 15.5656 3.41785 15.856 4.69999 15.9198C6.02142 15.9942 9.98213 15.9942 11.3036 15.9198C12.5857 15.8596 13.7214 15.5692 14.6571 14.6377C15.5928 13.7098 15.8857 12.5835 15.95 11.3121C16.025 10.0016 16.025 6.07748 15.95 4.76707ZM14.2428 12.7181C13.9643 13.4123 13.425 13.9471 12.7214 14.2269C11.6678 14.6412 9.16785 14.5456 8.00356 14.5456C6.83928 14.5456 4.33571 14.6377 3.28571 14.2269C2.58571 13.9506 2.04642 13.4158 1.76428 12.7181C1.34642 11.6733 1.44285 9.19415 1.44285 8.03957C1.44285 6.88498 1.34999 4.40228 1.76428 3.36102C2.04285 2.66686 2.58214 2.13207 3.28571 1.85227C4.33928 1.4379 6.83928 1.53352 8.00356 1.53352C9.16785 1.53352 11.6714 1.44144 12.7214 1.85227C13.4214 2.12852 13.9607 2.66332 14.2428 3.36102C14.6607 4.40582 14.5643 6.88498 14.5643 8.03957C14.5643 9.19415 14.6607 11.6769 14.2428 12.7181Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="we-in-socials-button">
+                        <button onclick="window.open('https://www.facebook.com/daria.gakh/')">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8.09149C16 3.67214 12.4194 0.0914917 8 0.0914917C3.58065 0.0914917 0 3.67214 0 8.09149C0 12.0844 2.92548 15.3941 6.75 15.9947V10.4041H4.71774V8.09149H6.75V6.32891C6.75 4.32407 7.94355 3.21665 9.77161 3.21665C10.6471 3.21665 11.5626 3.37278 11.5626 3.37278V5.34052H10.5535C9.56 5.34052 9.25 5.9573 9.25 6.58988V8.09149H11.4687L11.1139 10.4041H9.25V15.9947C13.0745 15.3941 16 12.0844 16 8.09149Z"/>
+                            </svg>                                
+                        </button>
+                    </div>
+                    <div class="we-in-socials-button">
+                        <button onclick="window.open('https://twitter.com/')">
+                            <svg viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3554 4.21502C13.3655 4.35714 13.3655 4.4993 13.3655 4.64142C13.3655 8.97644 10.066 13.9714 4.03555 13.9714C2.17767 13.9714 0.451787 13.4333 -1 12.4993C-0.73603 12.5298 -0.482248 12.5399 -0.208122 12.5399C1.32485 12.5399 2.73605 12.0222 3.86296 11.1389C2.42133 11.1084 1.2132 10.1643 0.796944 8.86478C1.00001 8.89522 1.20304 8.91553 1.41626 8.91553C1.71067 8.91553 2.00511 8.87491 2.2792 8.80388C0.776663 8.49928 -0.350279 7.1795 -0.350279 5.58558V5.54499C0.0862544 5.78865 0.593912 5.94093 1.13195 5.96121C0.248692 5.37236 -0.329966 4.3673 -0.329966 3.23023C-0.329966 2.6211 -0.167559 2.06273 0.116723 1.57541C1.73095 3.56526 4.15736 4.86474 6.87816 5.00689C6.82741 4.76324 6.79694 4.50945 6.79694 4.25564C6.79694 2.44851 8.25888 0.97644 10.0761 0.97644C11.0203 0.97644 11.8731 1.37238 12.4721 2.01198C13.2132 1.86985 13.9238 1.59572 14.5533 1.2201C14.3096 1.98154 13.7919 2.62113 13.1117 3.0272C13.7716 2.95617 14.4112 2.77338 15 2.5196C14.5534 3.16932 13.995 3.74798 13.3554 4.21502Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts-text">
+                    <h1>Контакти</h1>
+                    <h2>Інтернет-магазин</h2>
+                    <p>order@booker.com.ua</p>
+                    <p>0 (800) 33-05-66 (Безкоштовно по Україні)</p>
+                    <h2>Видавництво</h2>
+                    <p>publish@booker.com.ua</p>
+                    <p>044-333-8530</p>
+                </div>
+                <div class="contacts-address">
+                    <img src="./resources/mapPoint.svg" alt="map point">
+                    <span>Київ, вул. Кіото, 19</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2022 Видавництво “Букер”. Усі права зберігаються за правовласником</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+:root {
+    --color1: #000000;
+    --color2: #7a4f46;
+    --color3: #b88f87;
+    --color4: #f8efea;
+    --color-star: #f6d970;
+    --color-star-disabled: #d3cec4;
+
+    --duration1: 0.1s;
+    --duration2: 0.2s;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: var(--color4);
+    padding: 0px 2.5vw;
+}
+
+button, input {
+    background: transparent;
+    border: none;
+}
+
+div.differential-line {
+    margin: 3vw 0;
+    height: 1px;
+    background: var(--color2);
+}
+
+h1 {
+    font-size: 1.7vw;
+}
+
+h2 {
+    margin-top: 1vw;
+    font-size: 1.4vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+span {
+    font-size: 0.8vw
+}

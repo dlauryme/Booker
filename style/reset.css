@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button, input {
+    outline: none;
+}

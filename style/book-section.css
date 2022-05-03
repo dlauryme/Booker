@@ -1,0 +1,140 @@
+div.book-section {
+    margin-top: 4vw;
+}
+
+div.book-section-title {
+    height: 2vw;
+    display: flex;
+    margin-bottom: 2.5vw;
+}
+
+div.book-section-line {
+    width: 0.25vw;
+    background: var(--color2);
+    border-radius: 0.25vw;
+}
+
+div.book-section-name span {
+    line-height: 2.2vw;
+    margin-left: 1vw;
+    display: block;
+    font-size: 2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.books {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-around;
+}
+
+div.book {
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.book-cover {
+    width: 12vw;
+    display: flex;
+}
+
+div.book-cover img {
+    object-fit: scale-down;
+}
+
+div.book-title {
+    margin-top: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+div.book-author {
+    font-size: 0.7vw;
+}
+
+div.book-review {
+    display: flex;
+    align-items: center;
+}
+
+div.book-stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.book-star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.book-cover {
+    height: 17vw;
+}
+
+div.book-cover img {
+    width: 100%;
+}
+
+div.book-star {
+    margin: 0 0.05vw;
+    width: 1vw;
+}
+
+div.book-star svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-star-disabled);
+}
+
+div.book-star-active svg {
+    color: var(--color-star);
+}
+
+div.book-feedback {
+    margin-left: 0.5vw;
+    padding-top: 0.15vw;
+}
+
+div.book-feedback span {
+    font-size: 0.7vw;
+    font-weight: lighter;
+}
+
+button.book-buy {
+    margin-top: 0.5vw;
+    padding: 0 0.7vw;
+    width: 7.5vw;
+    height: 1.7vw;
+    border: 1px solid var(--color2);
+    border-radius: 0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--duration2);
+}
+
+button.book-buy:hover {
+    /* border: 3px solid var(--color2); */
+    box-shadow: 0.05vw 0.25vw 0.25vw var(--color3) inset;
+}
+
+div.book-price {
+    padding-top: 0.2vw;
+    font-size: 1vw;
+}
+
+div.book-cart {
+    height: 70%;
+    display: flex;
+}
+
+div.book-cart img {
+    height: 100%;
+}

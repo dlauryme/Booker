@@ -1,0 +1,13 @@
+div#about p {
+    margin: 2vw 0;
+}
+
+div.about-ad {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+div#about div#main-search {
+    margin: 0;
+}
