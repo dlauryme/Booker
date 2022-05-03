@@ -1,6 +1,4 @@
 function init() {
-    window.scrollTo(0, 0);
-
     document.querySelectorAll("div.return-top-button button").forEach(el => {
         el.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
